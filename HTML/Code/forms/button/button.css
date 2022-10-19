@@ -1,0 +1,5 @@
+.styled {
+  all: unset;
+ border: 2px solid black;
+ padding: 2px;
+}
