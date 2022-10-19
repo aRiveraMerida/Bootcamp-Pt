@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal info</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="Antonio"
+          minlength="5"
+          maxlength="20"
+        />
+        <label for="surname">Surname:</label>
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          placeholder="Ej: Perez Garcia"
+          pattern="/^[A-Za-z]+$/"
+          required
+        />
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+      </fieldset>
+      <fieldset>
+        <legend>Data</legend>
+        <label for="over18">Over 18?</label>
+        <input type="checkbox" id="over18" checked />
+        <label for="hair">Hair color:</label>
+        <input type="color" value="#3E1877" />
+        <label for="born">Born date:</label>
+        <input type="date" />
+        <label for="avatar">Avatar</label>
+        <input type="file" accept="image/png, image/jpg, video/mp4"/>
+        <label for="age">Age:</label>
+        <input type="number" min="18" max="100" />
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" />
+        <label for="javascript">Javascript Level</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="80"
+          step="20"
+          id="javascript"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="gender" />
+        <label for="other">Other</label>
+        <input type="radio" id="other" value="other" checked name="gender" />
+      </fieldset>
+      <fieldset>
+        <legend>Other</legend>
+        <label for="ice-cream-flavours">Ice Cream Flavours</label>
+        <input list="ice-cream-flavours" />
+        <datalist id="ice-cream-flavours">
+          <option value="Vainilla" />
+          <option value="Chocolate" />
+          <option value="Pistacho" />
+          <option value="Fresa" />
+        </datalist>
+        <label for="pets">Choose your pet</label>
+        <select id="pets" multiple>
+          <option value="null">-</option>
+          <optgroup label="Company">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="parrot">Parrot</option>
+          </optgroup>
+          <optgroup label="Exotic">
+            <option value="tarantula">Tarantula</option>
+            <option value="snake">Snake</option>
+            <option value="pig">Pig</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="gasolina">Gasolina:</label>
+        <meter
+          id="gasolina"
+          min="0"
+          max="100"
+          low="33"
+          high="60"
+          optimum="80"
+          value="50"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="file">File progress:</label>
+
+        <progress id="file" max="100" value="70">70%</progress> 
+      </fieldset>
+    <fieldset>
+        <textarea rows="2" cols="40" readonly>Erase una vez...</textarea>
+    </fieldset>
+    <fieldset>
+        <input type="file" capture="user"/> 
+    </fieldset>
+    <fieldset>
+        <input type="time"/>
+        <input type="month"/>
+        <input type="datetime-local"/>
+        <input type="week"/>
+    </fieldset>
+      <!--   <button type="button">Register</button> -->
+      <input type="reset" value="Reset" disabled/>
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
