@@ -1,0 +1,77 @@
+/* BOX-SIZING */
+.box1,
+.box2 {
+  border: 10px solid black;
+  width: 150px;
+  height: 75px;
+  background-color: aquamarine;
+}
+
+.box1 {
+  box-sizing: border-box;
+}
+
+.box2 {
+  box-sizing: content-box;
+}
+/* OVERFLOW */
+.box3,
+.box4,
+.box5,
+.box6 {
+  border: 2px solid black;
+  width: 400px;
+  height: 20px;
+  margin: 1rem 0;
+}
+
+.box3 {
+  overflow: hidden;
+}
+
+.box4 {
+  overflow: scroll;
+}
+
+.box5 {
+  overflow: auto;
+}
+
+.box6 {
+  overflow: visible;
+}
+
+/* ESTO ES UNA GUARRADA */
+hr {
+  margin: 4rem 0;
+}
+
+#div1,
+#div2,
+#div3,
+#div4 {
+  border: 1px solid yellowgreen;
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+#div1 {
+  overflow-x: hidden;
+}
+#div2 {
+  overflow-x: scroll;
+}
+#div3 {
+  overflow-x: visible;
+}
+#div4 {
+  overflow-x: auto;
+}
+
+.box7 {
+  border: 4px solid black;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}

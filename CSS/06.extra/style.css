@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./naranjas.png");
+}
+
+.glass {
+  margin: 2rem;
+  width: 500px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  filter: hue-rotate(90deg) blur(5px);
+}
+
+.box {
+  border: 2px solid black;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  transform: scale(0.5) rotate(12deg);
+}

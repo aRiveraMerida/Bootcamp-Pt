@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10vh;
+  background-color: orange;
+}
+
+main {
+  min-height: 80vh;
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: crimson;
+}
+
+footer {
+  height: 10vh;
+  background-color: navy;
+}
+
+p {
+  font-size: 7rem;
+}

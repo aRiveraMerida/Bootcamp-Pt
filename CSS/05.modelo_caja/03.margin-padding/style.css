@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box1,
+.box2 {
+  width: 200px;
+  border: 2px solid black;
+  background-color: crimson;
+}
+
+.box1 > p {
+  color: white;
+  padding: 10px;
+}
+
+.box1 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.box2 {
+  margin-left: 10px;
+}
+
+.box2 > p {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* ESTO ES LO MISMO */
+  padding: 5px 0 5px 10px;
+}
+
+button {
+  all: unset;
+  border: 2px solid black;
+  background-color: cadetblue;
+  margin: 10px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
