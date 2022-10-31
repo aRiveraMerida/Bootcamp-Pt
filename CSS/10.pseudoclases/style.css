@@ -1,0 +1,43 @@
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: violet;
+}
+
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover{
+  width: 350px;
+  height: 350px;
+  background-color: green;
+}
+
+
+
+.text:required{
+  background-color: green;
+}
+
+.text:focus{
+  background-color: grey;
+}
+
+.checkbox {
+  transition: all 1s ease-in-out;
+}
+
+.checkbox:checked{
+  transform: scale(2);
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+div {
+  /* Ponemos un alto mínimo, por defecto es 0 */
+  min-height: 200px;
+  /* Dibujamos un borde para ver límites */
+  border: 2px solid black;
+}
+
+#header {
+  background: royalblue;
+}
+
+#page {
+  background: tomato;
+}
+
+#footer {
+  background: yellow;
+}
+
+#menu, #content {
+  /* Necesario para que los elementos estén en horizontal */
+  display: inline-block;
+}
+
+#menu {
+  background: blue;
+  width: calc(30% - 4px) ;
+}
+
+#content {
+  background: lightgrey;
+  width: calc(70% - 4px);
+}
+
+@media screen and (max-width: 640px) {
+  * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  #menu, #content {
+    display: block;
+  }
+
+  #menu {
+    width: 100%;
+    background: violet;
+  }
+
+  #content {
+    width: 100%;
+    background: chocolate;
+  }
+}

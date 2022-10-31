@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: coral;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  position: relative;
+}
+
+nav > div {
+  position: absolute;
+  left: calc(50% - 200px);
+}
+
+main {
+  margin-top: 100px;
+}
+
+.hero {
+  width: 30%;
+}
+
+.hero > img {
+  width: 100%;
+}
