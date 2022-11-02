@@ -1,0 +1,16 @@
+p::after {
+  content: "📁";
+}
+
+p::before {
+  content: "🫠";
+}
+
+li{
+    list-style-type: none;
+}
+
+li::before{
+    content: "🎼";
+    padding-right: 0.5rem;
+}

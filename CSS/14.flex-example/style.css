@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+:root {
+  --background: #fffeff;
+  --secondary: #ee181e;
+  --primary: #262425;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+strong{
+    color: var(--secondary)
+}
+
+header > nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  padding: 1rem;
+}
+
+header > nav > div > img {
+  height: 10vh;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+a:hover {
+  color: var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > .gallery {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+main > .gallery > div {
+  width: 150px;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(80%);
+}
+
+main > .gallery > div:hover {
+  transform: scale(1.10) rotate(5deg);
+  cursor: pointer;
+  filter: grayscale(0)
+}
+
+main > .gallery > div > img {
+  display: block;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+main > .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 6rem;
+}
+
+main > .news > p{
+    text-align: justify;
+}
+
+main > .news > img{
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+main > .news > iframe{
+    width: 50vw;
+    height: 300px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+footer{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+footer > ul{
+    display: flex;
+    gap: 1rem;
+}
+
+footer > ul > li > img{
+    width: 1.5rem;
+    height: 1.5rem;
+}

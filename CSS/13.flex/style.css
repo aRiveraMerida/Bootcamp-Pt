@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.father {
+  background-color: cadetblue;
+  border: 2px solid black;
+  padding: 0.5rem;
+  min-height: 300px;
+}
+
+.son {
+  height: 100px;
+  background-color: crimson;
+  border: 2px solid black;
+}
+
+/* FLEX */
+.father {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.son {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  align-self: flex-start;
+}
+
+.son1 {
+  flex-grow: 1;
+}
+
+.son2 {
+  /*   order: 0; */
+  flex-grow: 2;
+}
+
+.son3 {
+  flex-grow: 3;
+}
+
+.son4 {
+  flex-grow: 4;
+}
+
+.son5 {
+  flex-grow: 5;
+}
+
+/* Flex Shrink */
+.flex-shrink-0 {
+	flex-shrink: 0;
+}
+.flex-shrink-1 {
+	flex-shrink: 1;
+}
+.flex-shrink-2 {
+	flex-shrink: 2;
+}
+.flex-shrink-3 {
+	flex-shrink: 3;
+}
+
+/* Flex Container */
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	background: #def;
+}
+/* Flex Items */
+.flex-item {
+	text-align: center;
+	background: gray;
+	border: 1px solid black;
+	color: white;
+	padding: 0.5em;
+	flex-basis: 40%;
+}
+
+/* Global style */
+h2 {
+	text-align: center;
+	margin:1em 0 0;
+}

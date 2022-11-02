@@ -1,0 +1,27 @@
+:root {
+  --primary: #05e2fa;
+  --secondary: #e23c4a;
+  --background: #002a3d;
+  --border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary);
+}
+
+div{
+    border-radius: var(--border-radius);
+}
