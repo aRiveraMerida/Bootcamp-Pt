@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+
+.grid-1{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 3rem;
+    padding: 3rem;
+}
+
+
+.grid-1 > div {
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.item-1 {
+  background-color: crimson;
+}
+
+.item-2 {
+  background-color: aqua;
+}
+
+.item-3 {
+  background-color: bisque;
+}
+
+.item-4 {
+  background-color: yellowgreen;
+}
+
+.item-5 {
+  background-color: violet;
+}
+
+.item-6 {
+  background-color: brown;
+}
+
+.item-7 {
+  background-color: tomato;
+}
+
+.item-8 {
+  background-color: cadetblue;
+}
+
+.item-9 {
+  background-color: tan;
+}
+
+.item-10 {
+  background-color: teal;
+}

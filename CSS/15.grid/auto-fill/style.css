@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, 150px);
+}
+
+.container > div {
+  font-size: 5rem;
+  background-color: crimson;
+  color: whitesmoke;
+  padding: 1rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
