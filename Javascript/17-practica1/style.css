@@ -1,0 +1,8 @@
+#movies-container {
+  display: flex;
+  gap: 1rem;
+}
+
+#movies-container > div > img {
+  width: 100px;
+}
