@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Coca-Cola",
+      "price": 1.5
+    },
+    {
+      "name": "Chanwi",
+      "price": "5",
+      "id": 2
+    },
+    {
+      "name": "Pizza",
+      "price": "10",
+      "id": 4
+    },
+    {
+      "name": "Pienso de gato",
+      "price": "32",
+      "id": 5
+    },
+    {
+      "name": "Botella de agua",
+      "price": "2",
+      "id": 6
+    }
+  ]
+}

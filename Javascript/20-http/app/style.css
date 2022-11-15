@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+button{
+    width: 100%;
+    background-color: crimson;
+    outline: none;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color: rgb(153, 16, 44);
+}
+input{
+    border: 2px solid crimson;
+}
+
+#products-container{
+    margin: 3rem;
+    list-style-type: none;
+}
+
+#products-container > li{
+    padding: 1rem 0;
+}
+
+#products-container > li > h3::before{
+    content: "🍕";
+    padding-right: 0.5rem;
+}
+
+#products-container > li > h4::before{
+    content: "💰";
+    padding-right: 0.5rem;
+}
