@@ -1,0 +1,22 @@
+main > section > div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 0.2rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+main > section > div > p {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+main > section > div > img {
+  padding: 0.6rem;
+  background-color: var(--primary);
+}

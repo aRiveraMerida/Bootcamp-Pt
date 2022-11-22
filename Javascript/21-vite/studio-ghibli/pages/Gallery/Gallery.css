@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  grid-auto-rows: 600px;
+  padding: 4rem;
+}
