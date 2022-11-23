@@ -1,0 +1,21 @@
+.projects {
+  padding: 0 8rem;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 8rem;
+}
+
+.projects figure {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects figure img {
+  width: 100%;
+}

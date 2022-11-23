@@ -1,0 +1,27 @@
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 3rem;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: inherit;
+  transform: scale(1.5);
+}
+
+nav a {
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--highlight);
+}
