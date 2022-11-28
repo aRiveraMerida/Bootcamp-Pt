@@ -8,6 +8,12 @@
   gap: 3rem;
 }
 
+@media (max-width: 700px) {
+  .home {
+    padding: 0 2rem;
+  }
+}
+
 .home > h1 {
   font-size: 5.5rem;
   background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
