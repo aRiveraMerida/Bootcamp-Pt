@@ -1,0 +1,41 @@
+#artist {
+  display: flex;
+  flex-direction: column;
+}
+
+#artist > a {
+  padding-top: 1rem;
+}
+
+#artist > img {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+#artist > p {
+  border-bottom: 1px solid whitesmoke;
+  padding: 0 2rem 2rem 2rem;
+}
+
+#albums {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 1rem;
+}
+
+#albums > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#albums > div > img {
+  width: 60%;
+}
+
+#albums > div > a {
+  padding-top: 1rem;
+}
