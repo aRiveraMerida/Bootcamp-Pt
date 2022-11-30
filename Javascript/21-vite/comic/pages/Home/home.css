@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --left-btn-hover-color: rgba(87, 84, 236, 1);
+  --right-btn-hover-color: crimson;
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.home-title {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover-color);
+  border-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  background-color: var(--right-btn-hover-color);
+  border-color: var(--right-btn-hover-color);
+}
+
+.comic {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.split.manga {
+  left: 0;
+  background: url('/images/gantz.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.split.american {
+  right: 0;
+  background: url('/images/kingdomCome.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.american::before {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.split.american,
+.split.manga,
+.split.american::before,
+.split.manga::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .manga {
+  width: var(--hover-width);
+}
+
+.hover-left .american {
+  width: var(--other-width);
+}
+
+.hover-right .american {
+  width: var(--hover-width);
+}
+
+.hover-right .manga {
+  width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  .home-title {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
