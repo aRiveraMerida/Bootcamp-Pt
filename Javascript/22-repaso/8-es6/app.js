@@ -61,3 +61,43 @@ const over18 = alumnos.filter(
   (alumno) => alumno.age >= 18 || alumno.name.includes("a")
 );
 console.log(over18);
+
+//REDUCE
+//Aprovechamos los alumnos de arriba
+const totalYear = alumnos.reduce(
+  (accumulator, alumno) => accumulator + alumno.age,
+  0
+);
+console.log(totalYear);
+
+//EVERY
+const xmen = [
+  {
+    id: 1,
+    name: "Wolverine",
+    status: "alive",
+  },
+  {
+    id: 2,
+    name: "Xavier",
+    status: "deceased",
+  },
+  {
+    id: 3,
+    name: "Beast",
+    status: "alive",
+  },
+];
+
+const everyXmenIsAlive = xmen.every((char) => char.status === "alive");
+console.log("¿Están vivos todos los X-Men?", everyXmenIsAlive);
+
+//SOME
+const someXmenIsAlive = xmen.some((char) => char.status === "alive");
+console.log("¿Algún X-Men queda vivo?", someXmenIsAlive);
+
+//EXTRA
+
+console.log([..."👩‍👧‍👦"]);
+console.log([..."🎅🏿"]);
+console.log([..."👨🏼‍💻"]);
