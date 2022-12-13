@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 1rem;
+}
+
+#app > div {
+  overflow: hidden;
+}
+
+#app > div > img {
+  width: 100%;
+  object-fit: cover;
+}
